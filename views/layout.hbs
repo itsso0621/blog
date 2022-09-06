@@ -29,7 +29,158 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
+    {{! header  }}
+    <header class="header" id="header">
+      <nav class="nav-bar container">
+        <a href="/">
+          <h2 class="logo">Jenna's Blog</h2>
+        </a>
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="#" class="list-link current">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Categories</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Reviews</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">News</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Membership</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Contact</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link screen-lg-hidden">Sign In</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link screen-lg-hidden">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+        <div class="list list-right">
+          <button class="btn place-itmes-center" id="theme-toggle-btn">
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+          </button>
+          <button class="btn place-itmes-center" id="search-icon">
+            <i class="ri-search-line"></i>
+          </button>
+          <button
+            class="btn place-itmes-center screen-lg-hidden menu-toggle-icon"
+            id="menu-toggle-icon"
+          >
+            <i class="ri-menu-3-line open-menu-icon"></i>
+            <i class="ri-close-line close-menu-icon"></i>
+          </button>
+          <a href="#" class="list-link screen-sm-hidden">Sign In</a>
+          <a
+            href="#"
+            class="list-link screen-sm-hidden btn sign-up-btn fancy-border"
+          ><span>Sign In</span></a>
+        </div>
+      </nav>
+
+    </header>
+
     {{{body}}}
+
+    {{! footer  }}
+    <footer class="footer section">
+
+      <div class="footer-container container d-grid">
+        <div class="company-data">
+          <a href="/">
+            <h2 class="logo">Jenna's Blog</h2>
+          </a>
+          <p class="company-description">At vero eos et accusamus et iusto odio
+            dignissimos ducimus qui blanditiis praesentium.</p>
+
+          <ul class="list social-media">
+            <li class="list-item">
+              <a href="#" class="list-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+
+              <a href="#" class="list-link">
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+
+              <a href="#" class="list-link">
+                <i class="ri-github-line"></i>
+              </a>
+
+              <a href="#" class="list-link">
+                <i class="ri-pinterest-line"></i>
+              </a>
+            </li>
+          </ul>
+
+          <span class="copyright-notice">&copy; 2022 Jenna Lee. All rights
+            reserved.</span>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Categories</h6>
+          <ul class="list footer-list">
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Company</h6>
+          <ul class="list footer-list">
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Useful links</h6>
+          <ul class="list footer-list">
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+            <li class="list-itme">
+              <a href="#" class="list-link">Sample item</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
     <script type="module">
       import Swiper from
       'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'

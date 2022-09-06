@@ -67,3 +67,26 @@ themeToggleBtn.addEventListener("click", () => {
 });
 
 // Swiper
+const swiper = new Swiper(".swiper", {
+  // How many slides to show
+  slidesPerView: 1,
+  // How much space between slides
+  spaceBetween: 20,
+  // Make the next and previous buttons work
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // Make the pagination indicators work
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
